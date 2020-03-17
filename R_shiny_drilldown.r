@@ -5,7 +5,7 @@ library(readr)
 library(lubridate)
 library(DT)
 
-sales <- read.csv('C:\\Karthik_Anumalasetty\\Personal\\My resume\\Value validation projects\\R_shiny_drilldown_visualization\\Sales.csv')
+sales <- read.csv('Sales.csv')
 sales <- sales %>% mutate(order_date2 = parse_date_time(order_date,orders = c("%m.%Y")))
 
 
